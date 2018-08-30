@@ -1,0 +1,92 @@
+### Gradle ###
+.gradle/
+build/
+target/
+out/
+bin/
+
+### Eclipse ### 
+.classpath
+.project
+.settings/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### VSCode ###
+.vscode
+
+### Windows ###
+
+# Thumbnail caches
+Thumbs.db
+ehthumbs.db
+
+# Folder configuration files
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Installation files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+### Mac OS X ###
+
+# Thumbnail caches
+._*
+
+# Folder configuration files
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+
+# Files potentially in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially on remote shares
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+### Compiled files ###
+
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+### Archived files ###
+
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+### KomodoEdit ###
+
+*.komodoproject
+.komodotools
