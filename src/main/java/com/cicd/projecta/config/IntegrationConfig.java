@@ -7,7 +7,14 @@ import org.springframework.context.annotation.Configuration;
 @ConfigurationProperties(prefix = "integration")
 public class IntegrationConfig {
 
+  public IntegrationConfig() {
+
+  }
   public Pivotal pivotal;
+
+  public void setPivotal(Pivotal pivotal) {
+    this.pivotal = pivotal;
+  }
 
   public Pivotal getPivotal() {
     return pivotal;
