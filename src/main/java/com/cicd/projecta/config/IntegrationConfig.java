@@ -10,7 +10,7 @@ public class IntegrationConfig {
   public IntegrationConfig() {
 
   }
-  public Pivotal pivotal;
+  private Pivotal pivotal;
 
   public void setPivotal(Pivotal pivotal) {
     this.pivotal = pivotal;
@@ -21,6 +21,38 @@ public class IntegrationConfig {
   }
 
   public static class Pivotal {
+    private String url;
+    private String key;
+
+    public String getUrl() {
+      return url;
+    }
+
+    public void setUrl(String url) {
+      this.url = url;
+    }
+
+    public String getKey() {
+      return key;
+    }
+
+    public void setKey(String key) {
+      this.key = key;
+    }
+  }
+
+
+  private Circleci circleci;
+
+  public Circleci getCircleci() {
+    return circleci;
+  }
+
+  public void setCircleci(Circleci circleci) {
+    this.circleci = circleci;
+  }
+
+  public static class Circleci {
     private String url;
     private String key;
 
