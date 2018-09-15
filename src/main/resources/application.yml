@@ -1,0 +1,6 @@
+
+
+integration:
+  pivotal:
+    url: 'https://www.pivotaltracker.com/services/v5/'
+    key: ${PIVOTAL_TOKEN}

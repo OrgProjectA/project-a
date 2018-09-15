@@ -12,6 +12,9 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'application'
+
+mainClassName = 'com.cicd.projecta.Application'
 
 bootJar {
     baseName = 'gs-rest-service'
@@ -29,5 +32,10 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
     compile("io.springfox:springfox-swagger2:2.9.2")
     compile("io.springfox:springfox-swagger-ui:2.9.2")
+    compile("org.apache.httpcomponents:httpclient:4.5")
     testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+run {
+    main = 'com.cicd.projecta.Application'
 }
