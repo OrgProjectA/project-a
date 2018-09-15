@@ -1,5 +1,5 @@
 
-[![CircleCI](https://circleci.com/gh/OrgProjectA/project-a/tree/master.svg?style=svg)](https://circleci.com/gh/OrgProjectA/project-a/tree/master)
+[![CircleCI](https://circleci.com/gh/OrgProjectA/project-a.svg?style=svg)](https://circleci.com/gh/OrgProjectA/project-a)
 
 To run execute the following command:
 
