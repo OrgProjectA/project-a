@@ -31,7 +31,7 @@ public class PivotalTrackerRepositoryImpl extends RestBuilder implements
 
   private void init() {
     HttpHeaders headers = new HttpHeaders();
-    headers.set("X-TrackerToken", integrationConfig.pivotal.getKey());
+    headers.set("X-TrackerToken", integrationConfig.getPivotal().getKey());
     entity = new HttpEntity(headers);
   }
 

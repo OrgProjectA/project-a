@@ -4,3 +4,6 @@ integration:
   pivotal:
     url: 'https://www.pivotaltracker.com/services/v5/'
     key: ${PIVOTAL_TOKEN}
+  circleci:
+    url: 'https://circleci.com/api/v1.1/'
+    key: ${CIRCLECI_TOEKN}

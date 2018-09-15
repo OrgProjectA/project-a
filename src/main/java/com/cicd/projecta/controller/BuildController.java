@@ -1,8 +1,7 @@
 package com.cicd.projecta.controller;
 
-import com.cicd.projecta.Service.ManagementService;
-import com.cicd.projecta.domain.Project;
-import java.util.List;
+import com.cicd.projecta.Service.BuildService;
+import com.cicd.projecta.domain.Build;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class ManagementController {
+public class BuildController {
 
   @Autowired
-  ManagementService managementService;
+  BuildService buildService;
 
-  @RequestMapping(value = "/projects", method = RequestMethod.GET)
-  public @ResponseBody List<Project> projectList() throws Exception {
+  @RequestMapping(value = "/lastBuild", method = RequestMethod.GET)
+  public @ResponseBody Build getLastBuildStatus() {
 
-    return managementService.getProjects();
+    return buildService.getBuildStatus();
   }
 }
