@@ -4,7 +4,7 @@ import com.cicd.projecta.config.IntegrationConfig;
 import com.cicd.projecta.config.IntegrationConfig.Circleci;
 import com.cicd.projecta.domain.thirdparty.CircleCI.Build;
 import com.cicd.projecta.domain.thirdparty.PivotalTracker.Project;
-import com.sun.org.apache.xml.internal.security.utils.Base64;
+import java.util.Base64;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.client.RestTemplateBuilder;
@@ -35,7 +35,7 @@ public class CircleCIRepositoryImpl extends RestBuilder implements ContinousInte
     HttpHeaders headers = new HttpHeaders();
 
     String userpass = integrationConfig.getCircleci().getKey() + ":";
-    String basicAuth = "Basic " + new String(Base64.encode(userpass.getBytes()));
+    String basicAuth = "Basic " + new String(Base64.getEncoder().encode(userpass.getBytes()));
 
     headers.set("Authorization", basicAuth);
     entity = new HttpEntity(headers);
