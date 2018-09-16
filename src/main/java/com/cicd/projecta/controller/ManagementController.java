@@ -1,6 +1,6 @@
 package com.cicd.projecta.controller;
 
-import com.cicd.projecta.Service.ManagementService;
+import com.cicd.projecta.service.ManagementService;
 import com.cicd.projecta.domain.Project;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,6 @@
 package com.cicd.projecta.controller;
 
-import com.cicd.projecta.Service.BuildService;
+import com.cicd.projecta.service.BuildService;
 import com.cicd.projecta.domain.Build;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

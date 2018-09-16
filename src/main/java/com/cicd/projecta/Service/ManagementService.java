@@ -1,4 +1,4 @@
-package com.cicd.projecta.Service;
+package com.cicd.projecta.service;
 
 
 import com.cicd.projecta.domain.Project;
