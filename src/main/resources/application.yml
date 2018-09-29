@@ -7,3 +7,7 @@ integration:
   circleci:
     url: 'https://circleci.com/api/v1.1/'
     key: ${CIRCLECI_TOEKN}
+  codacy:
+    url: 'https://api.codacy.com/2.0/'
+    key: ${CODACY_API}
+    

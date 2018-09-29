@@ -72,4 +72,32 @@ public class IntegrationConfig {
       this.key = key;
     }
   }
+  
+  
+  private Codacy codacy;
+  
+  public Codacy getCodacy() {
+	  return codacy;
+  }
+  
+  public static class Codacy {
+	  private String url;
+	    private String key;
+
+	    public String getUrl() {
+	      return url;
+	    }
+
+	    public void setUrl(String url) {
+	      this.url = url;
+	    }
+
+	    public String getKey() {
+	      return key;
+	    }
+
+	    public void setKey(String key) {
+	      this.key = key;
+	    }
+  }
 }
